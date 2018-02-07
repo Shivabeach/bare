@@ -1,0 +1,54 @@
+header
+  background: $sunset-orange
+  grid-area: header
+
+.content
+  background: $sea-green
+  display: grid
+  grid-area: content
+  grid-gap: 1em
+  grid-template-areas: 'title' 'for2' 'for3'
+  grid-template-columns: 1fr
+  grid-template-rows: 1fr 1fr 1fr
+
+
+.side
+  background: $v-2
+  display: grid
+  grid-area: side
+  grid-template-areas: 'menu' 'records' 'info'
+  grid-template-columns: 1fr
+  grid-template-rows: 1fr 1fr 1fr
+
+footer
+  background: $ultra-violet
+  grid-area: footer
+
+//side alternate areas
+.menu
+  background: $v-4
+  grid-area: menu
+
+  li
+    display: inline-block
+
+.records
+  background: $ultra-violet
+  grid-area: records
+
+.info
+  background: $blue
+  grid-area: info
+
+//content grid areas
+.title
+  background: $almond
+  grid-area: title
+
+.for2
+  grid-area: for2
+  background: $grape9
+
+.for3
+  background: $indigo9
+  grid-area: for3

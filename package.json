@@ -1,0 +1,16 @@
+{
+  "name": "bare",
+  "version": "1.5.0",
+  "description": "grid test sight",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "grid",
+    "css",
+    "practice"
+  ],
+  "author": "Brad VH <mrwilson1@comcast.net>",
+  "license": "ISC"
+}

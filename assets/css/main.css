@@ -1,0 +1,256 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit; }
+
+html,
+body {
+  min-height: 100%; }
+
+ul,
+ol {
+  list-style-type: none;
+  margin: 0;
+  padding: 0; }
+
+dl {
+  margin: 0; }
+
+dt {
+  font-weight: 600;
+  margin: 0; }
+
+dd {
+  margin: 0; }
+
+figure {
+  margin: 0; }
+
+img,
+picture {
+  margin: 0;
+  max-width: 100%; }
+
+table {
+  border-collapse: collapse;
+  margin: 0.75em 0;
+  table-layout: fixed;
+  width: 100%; }
+
+th {
+  border-bottom: 1px solid #a6a6a6;
+  font-weight: 600;
+  padding: 0.75em 0;
+  text-align: left; }
+
+td {
+  border-bottom: 1px solid #ddd;
+  padding: 0.75em 0; }
+
+tr,
+td,
+th {
+  vertical-align: middle; }
+
+body {
+  color: #333;
+  font-family: "Hoefler Text", "Baskerville Old Face", "Garamond", "Times New Roman", serif;
+  font-size: 1em;
+  line-height: 1.5; }
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Hoefler Text", "Baskerville Old Face", "Garamond", "Times New Roman", serif;
+  font-size: 1.25em;
+  line-height: 1.2;
+  margin: 0 0 0.75em; }
+
+h1 {
+  font-size: 4.0rem;
+  line-height: 1.2;
+  letter-spacing: 1rem; }
+
+h2 {
+  font-size: 3.6rem;
+  line-height: 1.25;
+  letter-spacing: -0.1rem; }
+
+h3 {
+  font-size: 3rem;
+  line-height: 1.3;
+  letter-spacing: -0.1rem; }
+
+h4 {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -0.08rem; }
+
+h5 {
+  font-size: 1.8rem;
+  line-height: 1.5;
+  letter-spacing: -0.05rem; }
+
+h6 {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  letter-spacing: 0; }
+
+p {
+  margin: 0 0 0.75em; }
+
+a {
+  color: #5f3dc4;
+  text-decoration: none;
+  -webkit-transition: color 150ms ease;
+  -o-transition: color 150ms ease;
+  transition: color 150ms ease; }
+  a:active, a:focus, a:hover {
+    color: #b7a8e4; }
+
+hr {
+  border-bottom: 1px solid #ddd;
+  border-left: 0;
+  border-right: 0;
+  border-top: 0;
+  margin: 1.5em 0; }
+
+/* Start my stuff */
+body {
+  overflow: auto;
+  margin: 0;
+  padding: 0;
+  line-height: 1.5;
+  text-rendering: optimizeLegibility;
+  -webkit-transition: all 300ms ease;
+  -o-transition: all 300ms ease;
+  transition: all 300ms ease;
+  font-size: calc(18px + 0.25vw);
+  color: #333;
+  vertical-align: baseline;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background: #d38fa6; }
+
+.error {
+  background: #a61e4d;
+  color: #fff;
+  font-weight: 500; }
+
+.info {
+  background: #1edfff;
+  color: #333; }
+
+.alert {
+  background: #cfa151;
+  color: #000; }
+
+li {
+  color: #666; }
+
+a {
+  color: #fffaf0; }
+  a:visited {
+    color: #ffb624; }
+  a:hover {
+    color: #00050f; }
+
+.menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.main-menu {
+  margin-left: 10px; }
+  .main-menu li {
+    padding: 3px 8px; }
+
+article {
+  display: block; }
+
+.container {
+  display: grid;
+  grid-gap: 1px;
+  grid-template-areas: "header" "content" "side" "footer";
+  grid-template-columns: 1fr;
+  grid-template-rows: auto auto auto auto; }
+  @media screen and (min-width: 736px) {
+    .container {
+      min-height: 100%;
+      background: #530f27;
+      display: grid;
+      grid-gap: 20px;
+      grid-template-areas: "header header header header" "content content content side" "footer footer footer footer";
+      grid-template-columns: 1fr 1fr 1fr 1fr;
+      grid-template-rows: 10vw 30vw 10vw;
+      margin: 0 auto;
+      width: 80%; } }
+
+header {
+  background: #fc4941;
+  grid-area: header; }
+
+.content {
+  background: #2e8e69;
+  display: grid;
+  grid-area: content;
+  grid-gap: 1em;
+  grid-template-areas: "title" "for2" "for3";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr; }
+
+.side {
+  background: #c3410e;
+  display: grid;
+  grid-area: side;
+  grid-template-areas: "menu" "records" "info";
+  grid-template-columns: 1fr;
+  grid-template-rows: 1fr 1fr 1fr; }
+
+footer {
+  background: #5f4b8b;
+  grid-area: footer; }
+
+.menu {
+  background: #822b09;
+  grid-area: menu; }
+  .menu li {
+    display: inline-block; }
+
+.records {
+  background: #5f4b8b;
+  grid-area: records; }
+
+.info {
+  background: #1565c0;
+  grid-area: info; }
+
+.title {
+  background: #ecd0c2;
+  grid-area: title; }
+
+.for2 {
+  grid-area: for2;
+  background: #862e9c; }
+
+.for3 {
+  background: #364fc7;
+  grid-area: for3; }
+
+
+
+/*# sourceMappingURL=main.css.map */
