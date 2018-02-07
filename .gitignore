@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 .DS_Store
 
 application/cache/*
@@ -9,18 +10,24 @@ application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 =======
+=======
+>>>>>>> dc9b5b43d1c2d9e33b5daa06049a7c718bce8ea3
 */config/development
 */logs/log-*.php
 !*/logs/index.html
 */cache/*
 !*/cache/index.html
 !*/cache/.htaccess
+<<<<<<< HEAD
 >>>>>>> 6a482fbf71d8f31019538e9ac8cb86a67c88fc92
+=======
+>>>>>>> dc9b5b43d1c2d9e33b5daa06049a7c718bce8ea3
 
 user_guide_src/build/*
 user_guide_src/cilexer/build/*
 user_guide_src/cilexer/dist/*
 user_guide_src/cilexer/pycilexer.egg-info/*
+<<<<<<< HEAD
 <<<<<<< HEAD
 /vendor/
 
@@ -36,10 +43,15 @@ user_guide_src/cilexer/pycilexer.egg-info/*
 *.sublime-workspace
 *.sublime-project
 =======
+=======
+>>>>>>> dc9b5b43d1c2d9e33b5daa06049a7c718bce8ea3
 
 #codeigniter 3
 application/logs/*
 !application/logs/index.html
 !application/logs/.htaccess
 /vendor/
+<<<<<<< HEAD
 >>>>>>> 6a482fbf71d8f31019538e9ac8cb86a67c88fc92
+=======
+>>>>>>> dc9b5b43d1c2d9e33b5daa06049a7c718bce8ea3
